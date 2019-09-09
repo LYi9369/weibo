@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div::selection {
+            background-color: green;
+            color: blue;
+        }
+
+        .box2 {
+            width: 30px;
+            height: 10px;
+            border: none;
+        }
+
+        .box2:focus {
+            border: 1px solid #eb7350;;
+        }
+
+        .box3 {
+            display: block;
+            background-color: red;
+            width: 300px;
+            height: 100px;
+            border: none;
+            /*flex-direction: row;*/
+            /*justify-content: center;*/
+            margin: 100px auto;
+
+        }
+
+        /*.box2:active {*/
+        /*    !*border: 1px solid #eb7350;;*!*/
+        /*    background-color: dodgerblue;*/
+        /*}*/
+        input:active {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div >问君能有几多愁，恰似一江春水向东流</div>
+<div class="box2">
+    div1
+</div>
+<input class="box3" value="输入框">
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav {
+            /*position: absolute;*/
+            display: inline-block;
+            width: 1200px;
+            /*height: 100px;*/
+            height: 200px;
+            /*top: 400px;*/
+            transform: translateY(50%);
+            /*margin-top: 300px;*/
+            /*border: 1px solid orange;*/
+            margin: 10px auto;
+            overflow: hidden;
+        }
+
+        .nav li {
+            display: inline-block;
+            border-radius: 50%;
+            float: left;
+            width: 240px;
+            height: 200px;
+            /*height: 100px;*/
+
+        }
+
+        .nav li img {
+            display: inline-block;
+            border-radius: 50%;
+
+            width: 100%;
+            height: 100%;
+            /*height: 100px;*/
+
+        }
+
+        .nav ul {
+            /*为了实现图片能够充满整个nav，需要把图片数量增加一倍，然后设置ul的宽度为200%*/
+            width: 500%;
+            /*moving是自定义的动画名称  */
+            /*  infinite规定动画无数次循环播放*/
+            animation: moving 7s linear infinite;
+        }
+
+        /*自定义动画名称为moving*/
+        @keyframes moving {
+            from {
+                transform: translateX(0)
+            }
+            to {
+                transform: translateX(-900px)
+            }
+        }
+
+        /*鼠标移到图片上时，暂停播放*/
+        .nav:hover ul {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li><img src="./imges/云深-头像.png" alt=""></li>
+        <li><img src="./imges/云深-头像.png" alt=""></li>
+        <li><img src="./imges/云深-头像.png" alt=""></li>
+        <li><img src="./imges/云深-头像.png" alt=""></li>
+        <li><img src="./imges/云深-头像.png" alt=""></li>
+        <li><img src="./imges/云深-头像.png" alt=""></li>
+        <li><img src="./imges/云深-头像.png" alt=""></li>
+        <li><img src="./imges/云深-头像.png" alt=""></li>
+        <li><img src="./imges/云深-头像.png" alt=""></li>
+        <li><img src="./imges/云深-头像.png" alt=""></li>
+        <li><img src="./imges/云深-头像.png" alt=""></li>
+        <li><img src="./imges/云深-头像.png" alt=""></li>
+        <!--        <li><img src="images/f01.png" alt=""></li>-->
+        <!--        <li><img src="images/f02.png" alt=""></li>-->
+        <!--        <li><img src="images/f03.png" alt=""></li>-->
+        <!--        <li><img src="images/f04.png" alt=""></li>-->
+        <!--        <li><img src="images/f05.png" alt=""></li>-->
+        <!--        <li><img src="images/f06.png" alt=""></li>-->
+        <!--        <li><img src="images/f07.png" alt=""></li>-->
+        <!--        <li><img src="images/f08.png" alt=""></li>-->
+        <!--        <li><img src="images/f09.png" alt=""></li>-->
+        <!--        <li><img src="images/f01.png" alt=""></li>-->
+        <!--        <li><img src="images/f02.png" alt=""></li>-->
+        <!--        <li><img src="images/f03.png" alt=""></li>-->
+        <!--        <li><img src="images/f04.png" alt=""></li>-->
+        <!--        <li><img src="images/f05.png" alt=""></li>-->
+        <!--        <li><img src="images/f06.png" alt=""></li>-->
+        <!--        <li><img src="images/f07.png" alt=""></li>-->
+        <!--        <li><img src="images/f08.png" alt=""></li>-->
+        <!--        <li><img src="images/f09.png" alt=""></li>-->
+    </ul>
+</div>
+</body>
+</html>
