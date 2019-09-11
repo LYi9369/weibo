@@ -254,7 +254,7 @@
 
 .wb-center .WB_main .WB_frame {
     margin: 7rem 7rem auto;
-    height: 200rem;
+    height: 240rem;
     width: 1170px;
     /*margin-top: 7rem;*/
     /*box-sizing: border-box;*/
@@ -855,6 +855,7 @@ pwd_login {
     display: inline-block;
     width: 50px;
     height: 50px;
+    float: left;
 }
 
 .UG_list_c img {
@@ -863,28 +864,34 @@ pwd_login {
     height: 50px;
 }
 
-.list_des {
+.UG_list_c .list_des {
     display: inline-block;
-    float: right;
-    width: 238px;
+    width: 210px;
+    /*height: 180px;*/
     height: 44px;
+    margin-left: 10px;
+    /*float: left;*/
+    /*margin-right: 30px;*/
+    /*margin-left: 30px;*/
 }
 
-.list_des h3 {
+.UG_list_c .list_des h3 {
     width: 238px;
     height: 21px;
     color: #333;
     float: right;
     font-size: 14px;
+    /*margin-left: 30px;*/
+    transform: translateX(30px);
     font-weight: normal;
     /*font-style: normal;*/
 }
 
-.list_des a:hover {
+.UG_list_c .list_des a:hover {
     color: #eb7350;
 }
 
-.list_des a {
+.UG_list_c .list_des a {
     color: #333;
 }
 
@@ -928,6 +935,7 @@ pwd_login {
 .list_des .des_main {
     width: 238px;
     height: 18px;
+    font-weight: normal;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -950,7 +958,7 @@ pwd_login {
     margin-bottom: 16px;
 }
 
-.UG_box_l .UG_tag_list .tag_title {
+.tag_title {
     color: #808080;
     font-weight: normal;
     font-size: 16px;
@@ -981,10 +989,88 @@ pwd_login {
 }
 
 .PCD_pictext_i_v5 {
-    background-color: skyblue;
+    /*background-color: skyblue;*/
     width: 660px;
     height: 1600px;
 }
+
+.UG_list_v2 .vid {
+    display: inline-block;
+    width: 660px;
+    height: 200px;
+    background-color: purple;
+}
+
+.UG_list_v2 .list_des {
+    display: inline-block;
+    /*float: left;*/
+    float: right;
+    background-color: skyblue;
+}
+
+.list_des .a_topic {
+    color: #eb7350;
+}
+
+.subinfo {
+    /*margin-left: 20px;*/
+    /*float: left;*/
+    margin-right: 5px;
+}
+
+.subinfo_box {
+    width: 240px;
+    height: 30px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    position: relative;
+    top: 120px;
+}
+
+.subinfo_box_img {
+    /*background-color: red;*/
+    position: relative;
+    /*top: 20px;*/
+}
+
+.subinfo_box span {
+    display: inline-block;
+    /*float: left;*/
+}
+
+.subinfo_box .subinfo_face img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.list_title_s {
+    display: inline-block;
+    width: 310px;
+    height: 100px;
+    /*overflow: hidden;*/
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+
+}
+
+.vid img {
+    width: 320px;
+    height: 180px;
+}
+
+.UG_tag_list_interest {
+    transform: translateX(-20px);
+}
+
+.UG_tag_list_interest ul {
+    margin-top: 10px;
+}
+
+/*.UG_tag_list_interest {*/
+/*    height: 300px;*/
+/*}*/
 
 /**********************中部内容栏结束********************/
 
@@ -993,18 +1079,111 @@ pwd_login {
 .wb-bottom {
     width: 1266px;
     height: 300px;
-    background-color: purple;
+    background-color: skyblue;
     margin: 0 auto;
 }
 
 .footer_link {
+
     width: 1000px;
     height: 153px;
-    background-color: blue;
+    /*background-color: blue;*/
     /*margin-top: 20px;*/
     margin: 0 auto;
     position: relative;
+    box-sizing: border-box;
+    padding: 20px;
     top: 30px;
+
+}
+
+.footer_link dl {
+    width: 138px;
+    height: 118px;
+    /*background-color: skyblue;*/
+
+
+}
+
+.footer_link .list {
+    display: inline-block;
+    float: left;
+    /*flex: 1;*/
+    margin-left: 75px;
+    /*width: 138px;*/
+    /*height: 118px;*/
+}
+
+.list span {
+
+}
+
+.list .list_dowm {
+    display: inline-flex;
+    float: right;
+    width: 110px;
+    /*transform: translateY(-120px);*/
+}
+
+footer_link dl {
+    /*display: inline-flex;*/
+    /*justify-content: space-between;*/
+    /*display: flex;*/
+    /*flex: 1;*/
+    /*display: inline-block;*/
+    /*float: left;*/
+}
+
+
+.list dt {
+    width: 138px;
+    height: 35px;
+    /*background-color: red;*/
+
+}
+
+.list dt {
+    font-size: 16px;
+    color: #333333;
+}
+
+.list dd {
+    /*display: inline-block;*/
+    width: 138px;
+    height: 16px;
+    margin: 5px 0 5px 0;
+    /*display: flex;*/
+    /*align-content: space-around;*/
+
+}
+
+.list dd a {
+    display: inline-block;
+    width: 65px;
+    height: 16px;
+    float: left;
+
+}
+
+.other_link {
+    height: 130px;
+    margin-top: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f5;
+    text-align: center;
+}
+
+.other_link p {
+    /*background-color: red;*/
+    /*margin-top: 40px;*/
+    margin-bottom: 15px;
+    /*margin: 50px 0 50px 0;*/
+}
+
+.other_link a {
+    /*margin-right: 20px;*/
+    margin: 60px 10px 60px 10px;
 }
 
 /**********************底部栏结束********************/
