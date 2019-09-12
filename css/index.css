@@ -998,14 +998,14 @@ pwd_login {
     display: inline-block;
     width: 660px;
     height: 200px;
-    background-color: purple;
+    /*background-color: purple;*/
 }
 
 .UG_list_v2 .list_des {
     display: inline-block;
     /*float: left;*/
     float: right;
-    background-color: skyblue;
+    /*background-color: skyblue;*/
 }
 
 .list_des .a_topic {
@@ -1023,8 +1023,10 @@ pwd_login {
     height: 30px;
     box-sizing: border-box;
     margin-left: 30px;
+    /*top: 10px;*/
     position: relative;
-    top: 120px;
+    /*left: -30px;!**!*/
+    /*top: 120px;*/
 }
 
 .subinfo_box_img {
@@ -1043,6 +1045,19 @@ pwd_login {
     width: 20px;
     height: 20px;
     border-radius: 50%;
+}
+
+.subinfo_box_dllb {
+    position: relative;
+    top: -60px;
+    left: -20px;
+}
+
+.subinfo_box_zouxin {
+    position: relative;
+    /*top: ;*/
+    top: -60px;
+    left: -20px;
 }
 
 .list_title_s {
